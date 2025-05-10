@@ -1,0 +1,41 @@
+body {
+    font-family: 'Century Gothic', sans-serif;
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: maroon;
+    margin-top: 40px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* space between grid items */
+    max-width: 800px;
+    margin: 40px auto; /* center the grid */
+    padding: 20px;
+}
+
+.month {
+    background-color: #cfd7c7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.month:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
